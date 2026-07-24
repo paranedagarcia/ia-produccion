@@ -15,9 +15,9 @@ st.set_page_config(
 )
 
 # ESTILOS
-with open('style/estilos.css') as f:
-    css = f.read()
-st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
+# with open('style/estilos.css') as f:
+#     css = f.read()
+# st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
 
 
 st.title("📊 Análisis de Plan de Compras")
@@ -33,11 +33,13 @@ archivo = st.sidebar.file_uploader(
     type=["xlsx", "xls"]
 )
 
-codigo_year = st.sidebar.selectbox(
-    "codigo_year",
-    [2022, 2023, 2024, 2025],
-    index=3
-)
+# Mijael
+# codigo_year = st.sidebar.selectbox(
+#     "codigo_year",
+#     [2022, 2023, 2024, 2025],
+#     index=3
+# )
+codigo_year=2025
 
 codigo_proceso = f"PC{str(codigo_year)[-2:]}"
 
