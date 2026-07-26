@@ -5,6 +5,8 @@ import streamlit.components.v1 as components
 from streamlit_extras.metric_cards import style_metric_cards
 from millify import millify
 
+import altair as alt
+
 import pandas as pd
 import plotly.express as px
 import io
@@ -319,5 +321,9 @@ if archivo is not None:
         mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
     )
 
+
+
 else:
     st.info("Por favor, suba un archivo Excel para comenzar el análisis.")
+
+
