@@ -1,8 +1,8 @@
-planilla de compras
+## planilla de compras
 - codigo presupuestario
 - nombre de proyecto
 
-planilla de codigos:
+## planilla de codigos:
 - codigo
 - nombre
 
