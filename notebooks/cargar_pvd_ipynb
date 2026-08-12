@@ -1,0 +1,7 @@
+import pandas as pd
+
+df = pd.read_excel("plan_de_compras_2025.xlsx")
+
+print(df.head())
+print(df.shape)
+print(df.columns.tolist())
